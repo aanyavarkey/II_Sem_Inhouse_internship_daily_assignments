@@ -1,0 +1,105 @@
+ <!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>registrstion form</title>
+    </head>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#b03372,#dbe5ac);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+form{
+    background:rgb(229, 229, 233);
+    width:420px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#190eea;
+}
+
+label{
+    display:legacy;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#FF7F50;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    border:1px solid #6912da;
+    border-radius:8px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus{
+    border-color:#4CAF50;
+    outline:none;
+    box-shadow:0 0 8px rgba(76,175,80,0.3);
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:20px;
+    background:#4CAF50;
+    color:yellow;
+    border:none;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+::placeholder{
+    color:#fffefe;
+}
+</style>
+    <body>
+        <form>
+          <h2><b>Registration Form</b></h2>
+            <div style="display:flex;gap:10px;">
+     <div><label>Name </label><div>
+     <input type="text" id="name"  name="name"   placeholder="Enter name"> <br><br>
+    <div> <label>Email</label><br>
+    <input type="email" placeholder ="Enter email "</div><br><br></div>
+   <div><label>Phone </label><br>
+   <input type ="number"placeholder ="Enter phone number "</div> <br><br>
+   <div><label>Department</label><br>
+   <input type ="text "placeholder ="Enter department " </div><br><br>
+   <div><label> Date of birth </label><br>
+   <input type="DOB"placeholder ="Enter dob"</div><br><br>
+    <label>Gender</label><br>
+      <select id="gender"name="gender">
+        <option value="select">Select<br><br>
+        <option value="male">Male<br><br>
+        <option value="female">Female<br><br>
+        <option value="other">Other<br><br>
+        </select></option><br><br>
+     <div><label> Password </label><br>
+   <input type="password" id="password" name="password"  placeholder ="Enter password"</div><br><br>
+   </div><label> Confirm password </label><br>
+   <div><input type="password" id="password" name="password"  placeholder ="Confirm password"</div><br><br>
+   <button>Submit</button><br>
+      </form> 
+    </body>
+</html>
